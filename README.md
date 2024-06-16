@@ -2,6 +2,8 @@
 
 This is a real-time chat application built using Next.js, TypeScript, NextAuth.js, Pusher, Redis, and Axios. The application supports Google Sign-In/Sign-Up for authentication and provides real-time messaging capabilities.
 
+![alt text](<Screenshot (517).png>)
+
 ## Features
 
 - **Authentication**: Secure authentication using NextAuth.js with Google Sign-In/Sign-Up.
