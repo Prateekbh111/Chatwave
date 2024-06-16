@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Real-Time Chat Application
 
-## Getting Started
+This is a real-time chat application built using Next.js, TypeScript, NextAuth.js, Pusher, Redis, and Axios. The application supports Google Sign-In/Sign-Up for authentication and provides real-time messaging capabilities.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Authentication**: Secure authentication using NextAuth.js with Google Sign-In/Sign-Up.
+- **Real-Time Communication**: Real-time messaging powered by Pusher.
+- **Type Safety**: Ensured with TypeScript.
+- **High Performance**: Leveraging Redis for efficient data storage and retrieval.
+- **Data Fetching**: Smooth and efficient using Axios.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Front-end framework.
+- **TypeScript**: Type safety and robust type-checking.
+- **NextAuth.js**: Authentication.
+- **Pusher**: Real-time communication.
+- **Redis**: Database.
+- **Axios**: Data fetching.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/Prateekbh111/Chatwave.git
+   cd chat-app
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Environment Variables:**
+   Create a `.env.local` file in the root directory and add the following environment variables:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```plaintext
+   NEXTAUTH_URL=http://localhost:3000
+   GOOGLE_CLIENT_ID=your_google_client_id
+   GOOGLE_CLIENT_SECRET=your_google_client_secret
+   REDIS_URL=redis://localhost:6379
+   PUSHER_APP_ID=your_pusher_app_id
+   PUSHER_KEY=your_pusher_key
+   PUSHER_SECRET=your_pusher_secret
+   PUSHER_CLUSTER=your_pusher_cluster
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser:**
+   Navigate to `http://localhost:3000`.
+
+## Usage
+
+1. **Sign Up / Sign In:**
+   Use Google Sign-In to authenticate.
+
+2. **Start Chatting:**
+   Enter a chat room and start sending messages in real-time.
